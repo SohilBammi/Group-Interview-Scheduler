@@ -6,15 +6,18 @@ import java.util.ArrayList;
 
 public class Scheduler {
 
-    final static int numTimeSlots = 14;
-    final static int groupSize = 10;
-    static TimeSlotSpread spread = new TimeSlotSpread(numTimeSlots, groupSize);
+    static int numTimeSlots;
+    static int groupSize;
+    static TimeSlotSpread spread;
     
     static ArrayList<Applicant> applicants = new ArrayList<Applicant>();
     static ArrayList<Applicant> waitlist = new ArrayList<Applicant>();
     
     public static void main(String[] args) {
         String csvFile = args[0];
+        numTimeSlots = Integer.parseInt(args[1]);
+        groupSize = Integer.parseInt(args[2]);
+        spread = new TimeSlotSpread(numTimeSlots, groupSize);
         String line = "";
         String cvsSplitBy = ",";
         
