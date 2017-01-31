@@ -14,7 +14,7 @@ public class Scheduler {
     static ArrayList<Applicant> waitlist = new ArrayList<Applicant>();
     
     public static void main(String[] args) {
-        String csvFile = "bin/input.csv";
+        String csvFile = args[0];
         String line = "";
         String cvsSplitBy = ",";
         
