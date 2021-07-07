@@ -1,4 +1,4 @@
-# sxeScheduler
+# Group Interview Scheduler
 Java application for placing people equitably in group interview timeslots based on their availability.
 
 All java files and class files necessary for running through command line and editing have been provided. 
